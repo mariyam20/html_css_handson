@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Photo Gallery</title>
+    <link href="css/Styles.css" rel="stylesheet">
+
+    <style>
+        .photo-gallery {
+            width: 95%;
+            border: 1px solid #757475;
+            padding: 10px;
+            margin: auto;
+            margin-top: 100px;
+            height: 500px;
+        }
+        
+        .photo {
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+        
+        .img-caption {
+            text-align: center;
+        }
+        
+        .photo:hover {
+            transform: scale(1.1);
+        }
+        
+        .photo img {
+            border: 3px ridge #7c7b7b;
+            box-shadow: 0px 0px 5px 2px #7c7b7b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--navabar starts here-->
+    <div id="navbar">
+        <div class="navbar-brand">India Tourism</div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">index</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="states.html">States</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="capitals.html">Capitals</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--navbar ends here-->
+
+    <div class="photo-gallery">
+        <div class="photo" id="photo1">
+            <a href="https://www.trawell.in/goa/beaches">
+                <img src="files/beach.webp" style="width: 250px; height: 180px;" alt="Beach" title="Beach in Chennai, South India">
+                <div class="img-caption">Beach</div>
+            </a>
+
+
+        </div>
+
+        <div class="photo" id="photo2">
+            <a href="https://www.google.com/maps/uv?pb=!1s0x3be7c80df114d757%3A0xa01fc669efe328e0!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNpIcQ4TzvIFmcuhT95fIfZ5RPGSyuC9GdQNlrI%3Dw260-h175-n-k-no!5scoffee%20of%20maharashtra%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipNpIcQ4TzvIFmcuhT95fIfZ5RPGSyuC9GdQNlrI&hl=en">
+                <img src="files/coffee.webp" style="width: 250px; height: 180px;" alt="Coffee" title="Coffee in maharashtra, India">
+                <div class="img-caption">Coffee</div>
+            </a>
+
+
+        </div>
+
+        <div class="photo" id="photo3">
+            <a href="https://www.google.com/search?q=Gandhar-thakur&tbm=isch&chips=q:gandhar+thakur,online_chips:
+            language+processing:lYQF2MUcwBo%3D&rlz=1C1VDKB_enIN969IN969&hl=en&sa=X&ved=2ahUKEwjZ9sPIk5Lz
+            AhWNnUsFHTvbAGkQ4lYoAnoECAEQFQ&biw=1349&bih=568">
+                <img src="files/gandhar-thakur.jpg" style="width: 250px; height: 180px;" alt="Gandhar-thakur" title="Gandhar-thakur in India ">
+                <div class="img-caption">Gandhar-thakur</div>
+            </a>
+
+
+        </div>
+    </div>
+
+    <div class="center">
+        <picture>
+            <source srcset="files/rose-1.png" media="(min-width:1000px)">
+            <source srcset="files/rose-1.png" media="(min-width:200px)">
+            <img src="" width="300px" height="300px" alt="rose-1" />
+        </picture>
+    </div>
+
+
+    <div class="center">
+        <audio controls="controls" autoplay="autoplay">
+            <source src="files/Audio.mpeg">
+            <source src="files/WhatsApp Audio.mp4">
+            Audio tag is not supported
+        </audio>
+    </div>
+
+    <div class="center">
+        <video controls="controls" width="700px">
+            <source src="files/Video.mp4"type="video/mp4">
+            <source src="files//WhatsApp Video.mp4"type="video/mp4">
+            <!-- <source src="files/Video.mp4"type="video/mp4"> -->
+        </video>
+    </div>
+
+    <div class="center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rRZYSnzG04E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-
+         picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="center">
+        <img src="files/workplace.jpg" usemap="#workmap" height="801" width="1200">
+        <map name="workmap">
+            <area shape="rect"coords="281,27,945,753"href="http://www.google.com/search?q=computer">
+            <area shape="rect"coords="1101,429,,1139,639"href="http://www.google.com/search?q=phone">
+            <area shape="circle"coords="931,271,1103,423"href="http://www.google.com/search?q=coffee">
+
+        </map>
+    </div>
+
+
+</body>
+
+</html>

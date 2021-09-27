@@ -1,192 +1,37 @@
-
 <html>
-    <head>
-        <title>Home</title>
-        <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-        <style>
-            body
-            {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-            .container
-            {
-                border:4px solid red;
-                margin: 4px;
-            }
-            .city
-            {
-                border: 3px dotted blue;
-                margin: 10px;
-                font-weight: bold;
-            }
-            .season
-            {
-                margin: 8px;
-                border: 3px inset violet;
-               font-weight: lighter;
-                /*color: #0b17c7;*/
-                text-align: justify;
 
-            }
-            #winter
-            {
-                margin: 12px;
-                border: 9px ridge green;
-            }
-            .cityheading
-            {
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 2vw;
-                text-decoration: underline #ff0000 wavy;
+<head>
+    <title>Home</title>
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/Styles.css" rel="stylesheet">
 
-            }
-            .seasonheading
-            {
-                font-family: cursive;
-                font-size: 160%;
-                font-style: italic;
-                color: #132c9e;
-            }
+</head>
 
-            h1
-            {
-                 /*font:italic small-caps bold 40px "Arial Black"; */
-                font: 40px "Arial Black";
-                color:/*#1a9b90;*/ /*hsl(130, 61%, 31%)*/   /*#5f5209*/  /*#666666*/  /*#999999*/  /*#CCCCCC*/
-                /*#CCCC99*/  /*#9999CC*/   #666699
-            }
+<body>
 
-            h4
-            {
-                text-transform: uppercase;
-            }
-
-            .seasonpara
-            {
-               /*text-indent: 20%;*/
-               /*letter-spacing: -3px;*/
-                /*line-height: 1.7;*/
-               /* word-spacing: 30px; */
-                text-shadow: -3px 3px 3px #93d159;
-                /*white-space: per*/
-                /*direction: rtl;*/
-                /*unicode-bidi: bidi-override;*/
-            }  
-            
-            .temp
-            {
-                font-weight: bolder;
-                color: #c90ca0;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Welcome to India Tourism</h1>
-
-        <div id="populardestinations" class="container">
-            <h2>popular Destinations</h2>
-
-
-        <div id="goa" class="city">
-        <h3 class="cityheading" ><span class="material-icons">location_city</span> GOA</h3>
-        <h4>Things to do</h4>
-        <h5>First one</h5>
-        <p>About first one</p>
-        <h5>Second one</h5>
-        <p>About second one</p>
-
-        <h4>Day Plans</h4>
-        <h5>First one</h5>
-        <p>About first one</p>
-        <h5>Second one</h5>
-        <p>About second one</p>
-        </div>
-
-        <div id="kochi" class="city">
-        <h3 class="cityheading"><span class="material-icons">location_city</span> KOCHI</h3>
-        <h4>Things to do</h4>
-        <h5>First one</h5>
-        <p>About first one</p>
-        <h5>Second one</h5>
-        <p>About second one</p>
-
-        <h4>Day Plans</h4>
-        <h5>First one</h5>
-        <p>About first one</p>
-        <h5>Second one</h5>
-        <p>About second one</p>
-        </div>
-
-        <div id="varanasi" class="city">
-        <h3 class="cityheading"><span class="material-icons">location_city</span> VARANASI</h3>
-        <h4>Things to do</h4>
-        <h5>First one</h5>
-        <p>About first one</p>
-        <h5>Second one</h5>
-        <p>About second one</p>
-
-        <h4>Day Plans</h4>
-        <h5>First one</h5>
-        <p>About first one</p>
-        <h5>Second one</h5>
-        <p>About second one</p>
-        </div>
-
-        <div id="srinagar" class="city">
-        <h3 class="cityheading"><span class="material-icons">location_city</span> Sri Nagar</h3>
-        <h4>Things to do</h4>
-        <h5>First one</h5>
-        <p>About first one</p>
-        <h5>Second one</h5>
-        <p>About second one</p>
-
-        <h4>Day Plans</h4>
-        <h5>First one</h5>
-        <p>About first one</p>
-        <h5>Second one</h5>
-        <p>About second one</p>
+    <!--navabar starts here-->
+    <div id="navbar">
+        <div class="navbar-brand">India Tourism</div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">index</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="states.html">States</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="capitals.html">Capitals</a></li>
+            </ul>
         </div>
     </div>
+    <!--navbar ends here-->
 
-    <div id="indianclimate" class="container">
 
-        <h2>Indian climate</h2>
+    <div class="copy-rights">All &copy;rights reserved</div>
 
-        <div id="summer" class="season">
-            <h3 class="seasonheading"> <span class="fa fa"></span>Summer</h3>
-            <p class="seasonpara">During the three month from April to June it is summer in mot parts of India. Generally in the month of
-                April, many parts of India experiences high <span class="temp"> temperature </span>.The normal <span class="temp"> temperature </span> recorded in this time in
-                generlly 30 C. But at some places in the plateau region the <span class="temp"> temperature </span> rises to 40 C. and in the Himalayan
-                mountain region,it remains near about 20 c.</p>
-        </div>
+    <div class="box">India</div>
+    <div class="box">USA</div>
+    <div class="box">Japan</div>
+    <div class="box">Australia</div>
+</body>
 
-        <div id="winter" class="season">
-            <h3 class="seasonheading"> <span class="fa fa-cloud"></span> Wenter</h3>
-            <p class="seasonpara" >During the three month from April to June it is summer in mot parts of India. Generally in the month of
-            April, many parts of India experiences high temperature.The normal temperature recorded in this time in
-            generlly 30 C. But at some places in the plateau region the temperature rises to 40 C. and in the Himalayan
-            mountain region,it remains near about 20 c. </p>
-        </div>
-
-        <div id="rainy" class="season">
-            <h3 class="seasonheading"> <span class=" fa fa-cloud-rain"></span> Rainy</h3>
-            <p class="seasonpara">During the three month from April to June it is summer in mot parts of India. Generally in the month of 
-            April, many parts of India experiences high temperature.The normal temperature recorded in this time in
-            generlly 30 C.But at some places in the plateau region the temperature rises to 40 C. and in the Himalayan
-            mountain region,it remains near about 20 c.</p>
-
-        </div>
-        <div id="spring" class="season">
-            <h3 class="seasonheading"> <span class="fa fa-cloud-sun"></span> Spring</h3>
-            <p class="seasonpara">During the three month from April to June it is summer in mot parts of India. Generally in the month of 
-            April, many parts of India experiences high temperature.
-               
-               The normal temperature recorded in this time in
-                       generlly 30 C.But at some places in the plateau region the temperature rises to 40 C. and in the Himalayan
-            mountain region,it remains near about 20 c.</p>
-        </div>
-    </div>
-    
-    </body>
 </html>
