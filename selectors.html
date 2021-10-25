@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* .class1 {
+            background-color: #c2bdbd;
+            border: 2px solid #ff0000;
+            margin: 5px;
+            padding: 5px;
+        } */
+        /* selects all instances of <p> tag */
+        
+        p {
+            background-color: #cecaca;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: 100px;
+            float: left;
+        }
+        
+        .smallcities {
+            clear: left;
+            height: 300px;
+        }
+        
+        .largecities {
+            height: 50%;
+        }
+        /* selects the <p>tags where it has two classes "city" and "india" and are children of <div>tag thet has id "smaller" .smaller.city.india {
+            border: 3px solid #ff0000;
+        } */
+        /* p.city {
+            border: 3px solid #ff0000
+        } */
+        /* selects the <p> tag that has id="boston" */
+        /* p#boston {
+            border: 3px solid #6ed46e;
+        } */
+        /* selects the elements that have class name "city" and "india"; and those must be childern of a <div> tag
+             */
+        /* div .city.india {
+            border: 3px solid #2c22bd;
+        } */
+        /* tag-tag child selector: selects all instances of <p> that are children 
+            (direct children/grand children) of <div> tag */
+        /* div p {
+            border: 3px solid #10dddd;
+        } */
+        /* tag-tag child selector: selects all instances of <p> that are children 
+            (direct children) of <div> tag (but not grad children) */
+        /* div>p {
+            border: 3px solid #cb16d1;
+        } */
+        /* .city.usa,
+        .city.uk {
+            border: 2px solid #ff0000;
+        } */
+        /* selects the <p> tag that has classes "city" and "india" that is
+        present immediately after <p> tag with "city" and "usa" classes */
+        /* .city.usa+.city.india {
+            border: 3px solid #0c0303;
+        } */
+        /* selects all the subsequent <p> tags that has classes "city" and "india" that is
+        present immediately after <p> tag with "city" and "usa" classes */
+        /* .city.usa~.city.india {
+            border: 3px solid #ebd406;
+        } */
+        /* selects all tags that have "src" attribute where the value begins with "/files" */
+        
+        img[src^='files/'] {
+            border: 3px solid red;
+        }
+        /* selects the <img> tags where the value of "src" attribute ends with "gif" */
+        /* img[src$="gif"] {
+            border: 3px solid #ff0000;
+        } */
+        /* selects the <img> tags where the value of "src" attribute contains "img" */
+        
+        img[src*=jpg] {
+            border: 3px solid #ff0000;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="largecities">
+        <p>para1</p>
+        <p class="class1">para2</p>
+        <p>para3</p>
+        <p class="class1">para4</p>
+        <p class="class1">para5</p>
+        <p>para6</p>
+        <p>para7</p>
+        <span class="class1">span1</span>
+        <span class="class1">span2</span>
+        <span>span3</span>
+
+        <div class="largecities">
+            <p class="city usa">New York</p>
+            <p class="city usa" id="boston">Boston</p>
+            <p class="city uk">London</p>
+            <p class="city uk">Manchester</p>
+        </div>
+
+        <div class="smallcities" id="smaller">
+            <p class="city usa">Anchorage</p>
+            <p class="city usa">Boulder</p>
+            <p class="city india">Vijayawada</p>
+            <p class="city india">Pune</p>
+        </div>
+
+        <p class="city india">Bangalore</p>
+
+
+
+        <img src="files/img.1.jpg" width="200px">
+        <img src="files/coffee.png" width="200px">
+        <img src="files/background (2).png" width="200px">
+        <img src="files/background.jpg" width="200px">
+        <img src="files/images.jpg" width="200px">
+        <img src="files/apple.gif" width="200px">
+        <img src="files/earth.gif" width="200px">
+</body>
+
+</html>
